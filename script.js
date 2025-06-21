@@ -86,21 +86,4 @@
     
     // Form submission (demo)
     const contactForm = document.querySelector('form');
-    
-    contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        
-        const nameInput = document.getElementById('name');
-        const emailInput = document.getElementById('email');
-        const subjectInput = document.getElementById('subject');
-        const messageInput = document.getElementById('message');
-        
-        // Simple validation
-        if (nameInput.value && emailInput.value && messageInput.value) {
-            // In a real application, you would send this data to a server
-            alert('Merci pour votre message ! Je vous répondrai dès que possible.');
-            contactForm.reset();
-        } else {
-            alert('Veuillez remplir tous les champs obligatoires.');
-        }
-    });
+  
